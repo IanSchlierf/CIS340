@@ -7,6 +7,9 @@ export default function App() {
     <View style={styles.container}>
       <Text style = {styles.yellow}>Just yellow Text!</Text>
       <Text style = {styles.LargGreen}> This is Big Green</Text>
+      <Text style = {[styles.yellow, styles.LargGreen]}> Yellow Text, then Big green text</Text>
+      <Text style = {[styles.LargGreen, styles.Yellow]}> Big Green Text, then yellow text</Text>
+
     </View>
   );
 }
