@@ -1,13 +1,11 @@
 
-import React, {useState} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import React, {Component} from 'react';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import * as ImagePicker from 'expo-image-picker'//import
 
 export default function App() {
 let openImagePickerAsync = async () => {
-  
   let permissionResult = await ImagePicker.requestCameraRollPermissionsAsync();
- 
 
   if (permissionResult.granted == false){
 
